@@ -10,11 +10,11 @@ Additional Content -> Add Content
 
 Paste:
 
-[https://raw.github.com/StealYourCode/Aurora-DND-contents/edit/main/README.md](https://raw.githubusercontent.com/StealYourCode/Aurora-DND-contents/main/campaign.index)
+[https://raw.githubusercontent.com/StealYourCode/Aurora-DND-contents/main/campaign.index](https://raw.githubusercontent.com/StealYourCode/Aurora-DND-contents/main/campaign.index)
 
 ## Contents
 
-### Species
+### Races
 - Shadar kai
 
 ### Backgrounds
