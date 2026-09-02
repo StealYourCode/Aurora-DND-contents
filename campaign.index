@@ -1,1 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
 
+<index>
+
+	<info>
+		<name>StealYourCode - D&D 2024 Custom Content</name>
+		<description>Custom Dungeons &amp; Dragons 2024 content for StealYourCode campaign.</description>
+		<author url="https://github.com/StealYourCode/Aurora-DND-contents">StealYourCode</author>
+
+		<update version="0.0.1">
+			<file name="campaign.index" url="https://raw.githubusercontent.com/StealYourCode/Aurora-DND-contents/main/campaign.index" />
+		</update>
+	</info>
+
+	<files>
+
+		<!-- Source -->
+		<file name="source.xml" url="https://raw.githubusercontent.com/StealYourCode/Aurora-DND-contents/main/source.xml" />
+
+		<!-- Races / Species -->
+		<file name="race-shadar-kai.xml" url="https://raw.githubusercontent.com/StealYourCode/Aurora-DND-contents/main/races/race-shadar-kai.xml" />
+
+	</files>
+
+</index>
