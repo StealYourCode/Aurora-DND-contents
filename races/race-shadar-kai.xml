@@ -4,7 +4,7 @@
 
 	<info>
 		<name>Shadar-kai</name>
-		<description>A 2024-compatible implementation of the Shadar-kai species.</description>
+		<description>Shadar-kai adapted for the 2024 rules.</description>
 		<author url="https://github.com/StealYourCode/Aurora-DND-contents">StealYourCode</author>
 
 		<update version="0.0.1">
@@ -12,50 +12,46 @@
 		</update>
 	</info>
 
-	<element
-		name="Shadar-kai"
+	<element name="Shadar-kai"
 		type="Race"
 		source="StealYourCode - D&amp;D 2024 Custom Content"
 		id="ID_STEALYOURCODE_2024_RACE_SHADAR_KAI">
 
 		<description>
 
-			<p>Shadar-kai are elves touched by the Shadowfell and connected to the Raven Queen.</p>
+			<p>Shadar-kai are the elves of the Shadowfell, originally drawn to that dread realm by the Raven Queen. Over the centuries, some of them have continued to serve her, while others have ventured into the Material Plane to forge their own destinies.</p>
+
+			<p class="indent">Once shadar-kai were Fey like the rest of their elven kin; now they exist in a state between life and death, thanks to being transformed by the Shadowfell's grim energy.</p>
+
+			<p class="indent">Shadar-kai have ashen skin tones, and while they're in the Shadowfell, they also become wizened, reflecting the somber nature of that gloomy plane.</p>
+
+			<p class="indent">Like other elves, shadar-kai can live to be over 750 years old.</p>
 
 			<h5>SHADAR-KAI TRAITS</h5>
 
-			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
-				<li><strong>Creature Type:</strong> Humanoid</li>
-				<li><strong>Size:</strong> Medium</li>
-				<li><strong>Speed:</strong> 30 feet</li>
-			</ul>
+			<p>As a shadar-kai, you have the following special traits.</p>
 
-			<p>As a Shadar-kai, you have the following special traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid. You are also considered an elf for any prerequisite or effect that requires you to be an elf.</p>
 
-			<p class="indent">
-				<strong><em>Darkvision.</em></strong>
-				You have Darkvision with a range of 60 feet.
-			</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
 
-			<p class="indent">
-				<strong><em>Fey Ancestry.</em></strong>
-				You have Advantage on saving throws you make to avoid or end the Charmed condition on yourself.
-			</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
 
-			<p class="indent">
-				<strong><em>Necrotic Resistance.</em></strong>
-				You have Resistance to Necrotic damage.
-			</p>
+			<p class="indent"><strong><em>Blessing of the Raven Queen.</em></strong> As a Bonus Action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
 
-			<p class="indent">
-				<strong><em>Trance.</em></strong>
-				You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation during which you retain consciousness.
-			</p>
+			<p class="indent">Starting at 3rd level, you also gain Resistance to all damage when you teleport using this trait. The Resistance lasts until the start of your next turn. During that time, you appear ghostly and translucent.</p>
 
-			<p class="indent">
-				<strong><em>Blessing of the Raven Queen.</em></strong>
-				As a Bonus Action, you can magically teleport up to 30 feet to an unoccupied space you can see. After you teleport using this trait, you gain Resistance to all damage until the start of your next turn.
-			</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+
+			<p class="indent"><strong><em>Fey Ancestry.</em></strong> You have Advantage on saving throws you make to avoid or end the Charmed condition on yourself.</p>
+
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
+
+			<p class="indent"><strong><em>Necrotic Resistance.</em></strong> You have Resistance to Necrotic damage.</p>
+
+			<p class="indent"><strong><em>Trance.</em></strong> You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.</p>
+
+			<p class="indent">Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next Long Rest.</p>
 
 		</description>
 
@@ -63,50 +59,45 @@
 
 		<rules>
 
-			<!-- 2024 species do not provide ability score increases. -->
-			<select
-				type="Ability Score Improvement"
-				name="Ability Score Improvement Option (Shadar-kai)"
-				supports="Custom Ability Score Improvement Option"
-				requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<!-- 2024 rules: ability scores are determined by Background, not Species. -->
 
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 
 			<stat name="innate speed" value="30" bonus="base" />
 
-			<grant
-				type="Language"
-				id="ID_LANGUAGE_COMMON"
-				requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- 2024 standard languages: Common + two additional choices. -->
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 
 			<select
 				type="Language"
 				name="Language (Shadar-kai)"
 				supports="Standard"
-				number="1"
-				requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+				number="2" />
 
-			<select
-				type="Language"
-				name="Customized Language (Shadar-kai)"
-				supports="Custom Race Language"
-				number="2"
-				requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-
+			<!-- Darkvision -->
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 
+			<!-- Fey Ancestry -->
 			<grant
 				type="Racial Trait"
 				id="ID_STEALYOURCODE_2024_RACIAL_TRAIT_SHADAR_KAI_FEY_ANCESTRY" />
 
+			<!-- Keen Senses -->
+			<grant
+				type="Racial Trait"
+				id="ID_STEALYOURCODE_2024_RACIAL_TRAIT_SHADAR_KAI_KEEN_SENSES" />
+
+			<!-- Necrotic Resistance -->
 			<grant
 				type="Racial Trait"
 				id="ID_STEALYOURCODE_2024_RACIAL_TRAIT_SHADAR_KAI_NECROTIC_RESISTANCE" />
 
+			<!-- Trance -->
 			<grant
 				type="Racial Trait"
 				id="ID_STEALYOURCODE_2024_RACIAL_TRAIT_SHADAR_KAI_TRANCE" />
 
+			<!-- Blessing of the Raven Queen -->
 			<grant
 				type="Racial Trait"
 				id="ID_STEALYOURCODE_2024_RACIAL_TRAIT_SHADAR_KAI_BLESSING_RAVEN_QUEEN" />
@@ -117,7 +108,7 @@
 
 
 	<!-- ============================================================ -->
-	<!-- Fey Ancestry                                                   -->
+	<!-- Fey Ancestry -->
 	<!-- ============================================================ -->
 
 	<element
@@ -130,11 +121,42 @@
 			<p>You have Advantage on saving throws you make to avoid or end the Charmed condition on yourself.</p>
 		</description>
 
+		<sheet>
+			<description>You have Advantage on saving throws you make to avoid or end the Charmed condition on yourself.</description>
+		</sheet>
+
 	</element>
 
 
 	<!-- ============================================================ -->
-	<!-- Necrotic Resistance                                           -->
+	<!-- Keen Senses -->
+	<!-- ============================================================ -->
+
+	<element
+		name="Keen Senses"
+		type="Racial Trait"
+		source="StealYourCode - D&amp;D 2024 Custom Content"
+		id="ID_STEALYOURCODE_2024_RACIAL_TRAIT_SHADAR_KAI_KEEN_SENSES">
+
+		<description>
+			<p>You have proficiency in the Perception skill.</p>
+		</description>
+
+		<sheet>
+			<description>You have proficiency in the Perception skill.</description>
+		</sheet>
+
+		<rules>
+			<grant
+				type="Proficiency"
+				id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+
+	</element>
+
+
+	<!-- ============================================================ -->
+	<!-- Necrotic Resistance -->
 	<!-- ============================================================ -->
 
 	<element
@@ -148,7 +170,7 @@
 		</description>
 
 		<sheet>
-			<description>Resistance to Necrotic damage.</description>
+			<description>You have Resistance to Necrotic damage.</description>
 		</sheet>
 
 		<rules>
@@ -161,7 +183,7 @@
 
 
 	<!-- ============================================================ -->
-	<!-- Trance                                                         -->
+	<!-- Trance -->
 	<!-- ============================================================ -->
 
 	<element
@@ -171,15 +193,20 @@
 		id="ID_STEALYOURCODE_2024_RACIAL_TRAIT_SHADAR_KAI_TRANCE">
 
 		<description>
-			<p>You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation during which you retain consciousness.</p>
+			<p>You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.</p>
 
-			<p>When you finish this trance, you can gain proficiency with two weapons or tools of your choice with which you don't already have proficiency. You retain these proficiencies until you finish your next Long Rest.</p>
+			<p class="indent">Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You retain these proficiencies until you finish your next Long Rest.</p>
 		</description>
+
+		<sheet>
+			<description>You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours while remaining conscious during your trance.</description>
+		</sheet>
 
 	</element>
 
+
 	<!-- ============================================================ -->
-	<!-- Blessing of the Raven Queen                                    -->
+	<!-- Blessing of the Raven Queen -->
 	<!-- ============================================================ -->
 
 	<element
@@ -189,28 +216,20 @@
 		id="ID_STEALYOURCODE_2024_RACIAL_TRAIT_SHADAR_KAI_BLESSING_RAVEN_QUEEN">
 
 		<description>
-			<p>As a Bonus Action, you can magically teleport up to 30 feet to an unoccupied space you can see.</p>
+			<p>As a Bonus Action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
 
-			<p>After you teleport using this trait, you gain Resistance to all damage until the start of your next turn.</p>
+			<p class="indent">Starting at 3rd level, you also gain Resistance to all damage when you teleport using this trait. The Resistance lasts until the start of your next turn. During that time, you appear ghostly and translucent.</p>
 		</description>
 
 		<sheet
 			action="Bonus Action"
-			usage="3/Long Rest">
+			usage="Proficiency Bonus/Long Rest">
 
 			<description>
-				Teleport up to 30 feet to an unoccupied space you can see. After teleporting, you gain Resistance to all damage until the start of your next turn.
+				Teleport up to 30 feet to an unoccupied space you can see. Starting at 3rd level, you gain Resistance to all damage until the start of your next turn.
 			</description>
 
 		</sheet>
-
-		<rules>
-
-			<stat
-				name="shadar-kai:blessing raven queen:uses"
-				value="3" />
-
-		</rules>
 
 	</element>
 
