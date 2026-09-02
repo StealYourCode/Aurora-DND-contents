@@ -3,8 +3,8 @@
 <elements>
 
 	<info>
-		<name>StealYourCode - D&D 2024 Custom Content</name>
-		<description>Custom content for a Dungeons & Dragons 2024 campaign.</description>
+		<name>StealYourCode - D&amp;D 2024 Custom Content</name>
+		<description>Custom content for a Dungeons &amp; Dragons 2024 campaign.</description>
 		<author url="https://github.com/StealYourCode/Aurora-DND-contents">StealYourCode</author>
 
 		<update version="0.0.1">
@@ -13,19 +13,19 @@
 	</info>
 
 	<element
-		name="StealYourCode - D&D 2024 Custom Content"
+		name="StealYourCode - D&amp;D 2024 Custom Content"
 		type="Source"
 		source="Core"
 		id="ID_STEALYOURCODE_SOURCE_DND2024_CUSTOM">
 
 		<description>
-			<p>Custom Dungeons & Dragons 2024 content created for the StealYourCode campaign.</p>
+			<p>Custom Dungeons &amp; Dragons 2024 content created for the StealYourCode campaign.</p>
 		</description>
 
 		<setters>
 			<set name="abbreviation">SYC2024</set>
 			<set name="author" abbreviation="SYC" url="https://github.com/StealYourCode/Aurora-DND-contents">StealYourCode</set>
-			<set name="information">D&D 2024</set>
+			<set name="information">D&amp;D 2024</set>
 			<set name="official">false</set>
 			<set name="core">false</set>
 			<set name="supplement">true</set>
