@@ -15,7 +15,7 @@
 	<element
 		name="Shadar-kai"
 		type="Race"
-		source="StealYourCode - D&D 2024 Custom Content"
+		source="StealYourCode - D&amp;D 2024 Custom Content"
 		id="ID_STEALYOURCODE_2024_RACE_SHADAR_KAI">
 
 		<description>
@@ -123,7 +123,7 @@
 	<element
 		name="Fey Ancestry"
 		type="Racial Trait"
-		source="StealYourCode - D&D 2024 Custom Content"
+		source="StealYourCode - D&amp;D 2024 Custom Content"
 		id="ID_STEALYOURCODE_2024_RACIAL_TRAIT_SHADAR_KAI_FEY_ANCESTRY">
 
 		<description>
@@ -140,7 +140,7 @@
 	<element
 		name="Necrotic Resistance"
 		type="Racial Trait"
-		source="StealYourCode - D&D 2024 Custom Content"
+		source="StealYourCode - D&amp;D 2024 Custom Content"
 		id="ID_STEALYOURCODE_2024_RACIAL_TRAIT_SHADAR_KAI_NECROTIC_RESISTANCE">
 
 		<description>
@@ -167,7 +167,7 @@
 	<element
 		name="Trance"
 		type="Racial Trait"
-		source="StealYourCode - D&D 2024 Custom Content"
+		source="StealYourCode - D&amp;D 2024 Custom Content"
 		id="ID_STEALYOURCODE_2024_RACIAL_TRAIT_SHADAR_KAI_TRANCE">
 
 		<description>
@@ -185,7 +185,7 @@
 	<element
 		name="Blessing of the Raven Queen"
 		type="Racial Trait"
-		source="StealYourCode - D&D 2024 Custom Content"
+		source="StealYourCode - D&amp;D 2024 Custom Content"
 		id="ID_STEALYOURCODE_2024_RACIAL_TRAIT_SHADAR_KAI_BLESSING_RAVEN_QUEEN">
 
 		<description>
